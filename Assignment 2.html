@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Assignment 2</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Task 1: CSS Positions */
+        .static-div {
+            background-color: lightblue;
+            padding: 10px;
+            border: 1px solid black;
+            position: static;
+        }
+
+        .relative-div {
+            background-color: lightgreen;
+            padding: 10px;
+            border: 1px solid black;
+            position: relative;
+            top: 20px;
+            left: 20px;
+        }
+
+        .absolute-parent {
+            position: relative;
+            height: 100px;
+            background-color: lightgray;
+            margin-top: 40px;
+        }
+
+        .absolute-div {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: pink;
+            padding: 10px;
+        }
+
+        /* Task 2: Fixed Header */
+        .fixed-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: darkblue;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10;
+        }
+
+        .fixed-header a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        /* Task 3: Simple Grid */
+        .grid-layout {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            padding: 20px;
+        }
+
+        .grid-layout div {
+            background-color: rgb(246, 242, 242);
+            text-align: center;
+            padding: 20px;
+
+        }
+
+        /* Task 4-6: YouTube Card */
+        .youtube-card {
+            padding: 10px;
+            background-color: white;
+            width: 200px;
+
+        }
+
+        .youtube-card img {
+            width: 100%;
+        }
+
+        .youtube-card .title {
+            font-weight: bold;
+
+        }
+
+        .youtube-card .description {
+            color: gray;
+        }
+
+        /* Task 7: Hover Effects */
+        .youtube-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        /* Task 8: Sticky Footer */
+        .sticky-footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Task 9: Centered Grid */
+        .centered-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        /* Task 10: Combined Layout */
+        .combined-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Task 2: Fixed Header -->
+    <div class="fixed-header">
+        <div>Logo</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </div>
+
+    <div style="margin-top: 60px;">
+        <!-- Task 1: CSS Positions -->
+        <h2>CSS Positions</h2>
+        <div class="static-div">Static Div</div>
+        <div class="relative-div">Relative Div</div>
+        <div class="absolute-parent">
+            <div class="absolute-div">Absolute Div</div>
+        </div>
+
+        <!-- Task 3: Simple Grid -->
+        <h2>Simple Grid Layout</h2>
+        <div class="grid-layout">
+            <div>Box 1</div>
+            <div>Box 2</div>
+            <div>Box 3</div>
+            <div>Box 4</div>
+            <div>Box 5</div>
+            <div>Box 6</div>
+        </div>
+
+        <!-- Task 4: YouTube Card Layout -->
+        <h2>YouTube Card Layout</h2>
+        <div class="youtube-card">
+            <img src="https://i.ytimg.com/vi/TmFHuAxqF5k/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAjK1VGbi0xR6sxUL3GUkq1Z3Ew0g"
+                alt="Thumbnail">
+            <div class="title">How he cracked off-campus Goldman Sachs?</div>
+            <div class="description">66k views.2days ago</div>
+            <div class="timestamp">22:15</div>
+
+        </div>
+
+        <!-- Task 6: Grid with YouTube Cards -->
+        <h2>Grid with YouTube Cards</h2>
+        <div class="grid-layout">
+            <div class="youtube-card">
+                <img src="https://i.ytimg.com/vi/TmFHuAxqF5k/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAjK1VGbi0xR6sxUL3GUkq1Z3Ew0g"
+                    alt="Thumbnail">
+                <div class="title">How he cracked off-campus Goldman Sachs?</div>
+                <div class="description">66k views.2days ago</div>
+                <div class="timestamp">30:15</div>
+            </div>
+            <div class="youtube-card">
+                <img src="https://i.ytimg.com/vi/TmFHuAxqF5k/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAjK1VGbi0xR6sxUL3GUkq1Z3Ew0g"
+                    alt="Thumbnail">
+
+
+                <div class="title">How he cracked off-campus Goldman Sachs?</div>
+                <div class="description">66k views.2days ago</div>
+                <div class="timestamp">23:10</div>
+            </div>
+            <div class="youtube-card">
+                <img src="https://i.ytimg.com/vi/TmFHuAxqF5k/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAjK1VGbi0xR6sxUL3GUkq1Z3Ew0g"
+                    alt="Thumbnail">
+                <div class="title">How he cracked off-campus Goldman Sachs?</div>
+                <div class="description">66k views.2days ago</div>
+                <div class="timestamp">20:1</div>
+            </div>
+        </div>
+        <div class="grid-layout">
+            <div class="youtube-card">
+                <img src="https://i.ytimg.com/vi/TmFHuAxqF5k/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAjK1VGbi0xR6sxUL3GUkq1Z3Ew0g"
+                    alt="Thumbnail">
+                <div class="title">How he cracked off-campus Goldman Sachs?</div>
+                <div class="description">66k views.2days ago</div>
+                <div class="timestamp">30:15</div>
+            </div>
+            <div class="youtube-card">
+                <img src="https://i.ytimg.com/vi/TmFHuAxqF5k/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAjK1VGbi0xR6sxUL3GUkq1Z3Ew0g"
+                    alt="Thumbnail">
+
+
+                <div class="title">How he cracked off-campus Goldman Sachs?</div>
+                <div class="description">66k views.2days ago</div>
+                <div class="timestamp">23:10</div>
+            </div>
+            <div class="youtube-card">
+                <img src="https://i.ytimg.com/vi/TmFHuAxqF5k/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAjK1VGbi0xR6sxUL3GUkq1Z3Ew0g"
+                    alt="Thumbnail">
+                <div class="title">How he cracked off-campus Goldman Sachs?</div>
+                <div class="description">66k views.2days ago</div>
+                <div class="timestamp">20:1</div>
+            </div>
+        </div>
+        <div class="grid-layout">
+            <div class="youtube-card">
+                <img src="https://i.ytimg.com/vi/TmFHuAxqF5k/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAjK1VGbi0xR6sxUL3GUkq1Z3Ew0g"
+                    alt="Thumbnail">
+                <div class="title">How he cracked off-campus Goldman Sachs?</div>
+                <div class="description">66k views.2days ago</div>
+                <div class="timestamp">30:15</div>
+            </div>
+            <div class="youtube-card">
+                <img src="https://i.ytimg.com/vi/TmFHuAxqF5k/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAjK1VGbi0xR6sxUL3GUkq1Z3Ew0g"
+                    alt="Thumbnail">
+
+
+                <div class="title">How he cracked off-campus Goldman Sachs?</div>
+                <div class="description">66k views.2days ago</div>
+                <div class="timestamp">23:10</div>
+            </div>
+            <div class="youtube-card">
+                <img src="https://i.ytimg.com/vi/TmFHuAxqF5k/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAjK1VGbi0xR6sxUL3GUkq1Z3Ew0g"
+                    alt="Thumbnail">
+                <div class="title">How he cracked off-campus Goldman Sachs?</div>
+                <div class="description">66k views.2days ago</div>
+                <div class="timestamp">20:1</div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- Task 8: Sticky Footer -->
+    <div class="sticky-footer">Copyright © 2024</div>
+</body>
+
+</html>

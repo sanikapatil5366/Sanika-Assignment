@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Assignment</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .para {
+            color: blue;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .list {
+            font-size: 16px;
+            color: green;
+            margin: 20px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- Task 1: Simple Webpage -->
+    <h1>Welcome to My Webpage</h1>
+    <p>This is a simple paragraph on my webpage.</p>
+    <a href="https://www.example.com">Visit Example</a>
+
+    <hr>
+
+    <!-- Task 2: Text Styling -->
+    <p>This paragraph includes <b>bold</b>, <i>italic</i>, and <u>underlined</u> text styles.</p>
+
+    <hr>
+
+    <!-- Task 3 & 9: Lists -->
+    <h2>Organizing Content with Lists</h2>
+    <div class="list">
+        <ol>
+            <li>First Ordered Item</li>
+            <li>Second Ordered Item</li>
+            <li>Third Ordered Item</li>
+            <li>Fourth Ordered Item</li>
+            <li>Fifth Ordered Item</li>
+        </ol>
+        <ul>
+            <li>First Unordered Item</li>
+            <li>Second Unordered Item</li>
+            <li>Third Unordered Item</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <!-- Task 4 & 7: Form Basics with Labels -->
+    <h2>Basic Form with Labels</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <!-- Task 5: Inline vs Block Elements -->
+    <h2>Inline vs Block Elements</h2>
+    <!-- Block elements -->
+    <h1>This is a Block Element</h1>
+    <p>This is also a Block Element</p>
+    <!-- Inline elements -->
+    <a href="#">This is an Inline Element</a>
+    <i>Inline Element Example</i>
+    <b>Another Inline Element</b>
+
+    <hr>
+
+    <!-- Task 6: Table -->
+    <h2>Basic Table</h2>
+    <table class="table">
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+        </tr>
+        <tr>
+            <td>Row 1, Col 1</td>
+            <td>Row 1, Col 2</td>
+            <td>Row 1, Col 3</td>
+        </tr>
+        <tr>
+            <td>Row 2, Col 1</td>
+            <td>Row 2, Col 2</td>
+            <td>Row 2, Col 3</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- Task 8: Styled Paragraph -->
+    <h2>Styled Paragraph</h2>
+    <p class="para">
+        This paragraph is styled using inline CSS with blue text, 18px font size, and centered alignment.
+    </p>
+
+    <hr>
+
+    <!-- Task 10: Combined Elements -->
+    <h2>Combined Webpage</h2>
+    <h1>Main Heading</h1>
+    <h2>Subheading</h2>
+    <p style="color: darkred; font-size: 20px; text-align: left;">
+        This paragraph demonstrates combining various elements into a cohesive layout.
+    </p>
+    <ul>
+        <li>First item in the list</li>
+        <li>Second item in the list</li>
+        <li>Third item in the list</li>
+    </ul>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter your username"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password"><br><br>
+        <input type="submit" value="Sign In">
+    </form>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>Description</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Feature A</td>
+                <td>Description of A</td>
+                <td>Active</td>
+            </tr>
+            <tr>
+                <td>Feature B</td>
+                <td>Description of B</td>
+                <td>Inactive</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

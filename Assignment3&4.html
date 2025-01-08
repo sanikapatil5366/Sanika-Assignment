@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Assignment</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Task 1: Bootstrap Grid Basics -->
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Bootstrap Grid Layout</h1>
+        <div class="row">
+            <div class="col-md-4 col-12 bg-primary text-white text-center p-3">Column 1</div>
+            <div class="col-md-4 col-12 bg-success text-white text-center p-3">Column 2</div>
+            <div class="col-md-4 col-12 bg-danger text-white text-center p-3">Column 3</div>
+        </div>
+    </div>
+
+    <!-- Task 2: Bootstrap Tables -->
+    <div class="container my-5">
+        <h2>Bootstrap Table</h2>
+        <table class="table table-striped table-bordered table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>John</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jane</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Sam</td>
+                    <td>22</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Task 3: Bootstrap Cards -->
+    <div class="container my-5">
+        <h2>Bootstrap Cards</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSy2E0AP0RAkuqKR6DEXy5tnxHr0z-10Dn2uJW2DoxE4vg6_knWHKROHEP8I1YoOo4DroMySnTas2svx4EtaPMW7_tJke8KunEf_kofOwY&usqp=CAc"Image>
+                    <div class="card-body">
+                        <h5 class="card-title">FlowerAura 3 Red Roses Bouquet in White Paper </h5>
+                        <p class="card-text">Some quick example text.</p>
+                        <a href="#" class="btn btn-primary">Go Somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS50m8LTTjW115RLYyJXJMMfu06YyWH8rruTfPhCnAOcozLssxnr_KEAQvtFcKJqROROEPKQcAnIunE4AubhcFc10_bBPfKspMBdB2Lu8CsXqkvFSXpExEq5A" class="card-img-top" alt="Image">
+                    <div class="card-body">
+                        <h5 class="card-title">FlowerAura Fresh Live Flower Bouquet of 5 Peach Rose & 5 Gerbera Flowers
+                        </h5>
+                        <p class="card-text">Some quick example text.</p>
+                        <a href="#" class="btn btn-primary">Go Somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://www.bigbasket.com/media/uploads/p/xxl/40069084_1-fresho-flowers-gerbera-yellow.jpg" class="card-img-top" alt="Image">
+                    <div class="card-body">
+                        <h5 class="card-title">fresho! Flowers - Gerbera Yellow, 1 pc
+                        </h5>
+                        <p class="card-text">Some quick example text.</p>
+                        <a href="#" class="btn btn-primary">Go Somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Task 4: Bootstrap Progress Bars -->
+    <div class="container my-5">
+        <h2>Bootstrap Progress Bars</h2>
+        <div class="progress mb-3">
+            <div class="progress-bar" role="progressbar" style="width: 70%;">70%</div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 50%;">50%</div>
+        </div>
+    </div>
+
+    <!-- Task 5: Bootstrap Carousel -->
+    <div class="container my-5">
+        <h2>Bootstrap Carousel</h2>
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://c02.purpledshub.com/uploads/sites/40/2023/08/JI230816Cosmos220-6d9254f-edited-scaled.jpg?w=1029&webp=1" class="d-block w-100" alt="Slide 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First Slide</h5>
+                        <p>Caption text for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://media.istockphoto.com/id/1394440950/photo/natural-view-cosmos-filed-and-sunset-on-garden-background.jpg?s=612x612&w=0&k=20&c=eBnRobwsk2w_9MqM6bnXukIia5j-ayuMS0PeB6GHN0E=" class="d-block w-100" alt="Slide 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second Slide</h5>
+                        <p>Caption text for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNGauxa5kZSOjeC0meUvKhoGX4q4ZlU9hzFYW2cuDpIQmLyrgHwyTOqsZO1Abgo31WtzI&usqp=CAU" class="d-block w-100" alt="Slide 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third Slide</h5>
+                        <p>Caption text for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Task 6: Bootstrap Modal -->
+    <div class="container my-5">
+        <h2>Bootstrap Modal</h2>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Open Modal
+        </button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        This is the modal content text.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
